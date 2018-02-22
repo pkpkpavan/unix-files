@@ -20,7 +20,7 @@ Ans:
 	
 2. display only current time using date command.
 ans:
-   cs2016a203@user:~/pavan$ date
+   cs2016a203@user:~/pavan$ cut -d "," -f 2 date.txt|grep -v date.txt
 Thu Feb  1 10:26:22 IST 2018
 
 4.print number of lines from ls-l o/p.
