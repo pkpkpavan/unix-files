@@ -1,0 +1,2 @@
+$a=$(date)
+echo "$a"
