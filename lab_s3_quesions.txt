@@ -1,11 +1,34 @@
 1. display the third column of your file without printing the header "cgpa" and sort the same.
-	cut -d "," -f 3 csea.csv|sort -d csea.csv|grep -v "usl no."
+Ans:
+     cs2016a203@user:~/pavan$ cut -d, -f 3 csea.csv|sort|grep -v CGPA
+10
+8.4
+8.9
+9.2
+9.2
+9.5
+9.5
+9.6
+9.7
+9.7
+9.7
+9.7
+9.8
+9.8
+9.9
+
+	
 2. display only current time using date command.
-	cut -d "," -f 2 date.txt|grep -v date.txt
+ans:
+   cs2016a203@user:~/pavan$ date
+Thu Feb  1 10:26:22 IST 2018
+
 4.print number of lines from ls-l o/p.
 5.display usn from 7-14 along with other files.
+ans:
 	tail -n 7 csea.csv|grep -v csea.csv
 6.sort only name fields using positions.
+ans:
 	cut -d "," -f 2 names.csv|sort -d names.csv|grep -v "names"
 
 
