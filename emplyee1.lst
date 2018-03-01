@@ -1,0 +1,40 @@
+empid|name|designation|salery|
+01|pavan|manager|20000
+02|pavan|cleaner|2000
+03|charan|teacher|15000
+04|kumar|painter|10000
+05|harsha|chairman|100000
+06|maruthi|sales person|20000
+07|nithin|actor|1000000
+08|mahesh|driver|10000
+09|gilaka|cricketer|100000
+10|abid|director|500000001|pavan|manager|20000
+
+~                                                                               
+~                                                                               
+~                                                                            
+q1).replace manger with director?
+
+A.sed 's/manager/director/g' emplyee1.lst
+
+01|pavan|director|20000
+02|pavan|cleaner|2000
+03|charan|teacher|15000
+04|kumar|painter|10000
+05|harsha|chairman|100000
+06|maruthi|sales person|20000
+07|nithin|actor|1000000
+08|mahesh|driver|10000
+09|gilaka|cricketer|100000
+10|abid|director|5000000
+
+2)print the name which is occuring more than once?
+A.sed -n '/pavan/p' emplyee1.lsy
+01|pavan|manager|50000
+02|pavan|cleaner|5000
+3)dispay the details emplyee having salery starting with 2 and end with 2?
+A.sed -n '/2.../p' emplyee1.lst
+01|pavan|manager|20000
+02|pavan|cleaner|2000
+
+
