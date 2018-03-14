@@ -1,0 +1,40 @@
+1)wrie a awk command to delete all blank spaces from file?
+A) sed 's/ //g' emp.lst
+12345|pavan|director|sales|12/06/13|20000
+12346|kalyan|manager|sales|14/07/13
+12347|harsha|ceo|sales|11/12/03|40000000
+12348|yadav|salesman|12/12/12|10000^C
+1239|Pavan|chairman|sales|11/12/01/200000
+12340|PPavan|manager|12/12/18|20000
+
+2)print only the odd number of files?
+A)awk 'NR %2==1' emp.lst
+12345|pavan|director|sales|12/06/13|20000
+12347|harsh a|ceo|sales|11/12/03|40000000
+1239|Pavan|chairman|sales|11/12/01/200000
+
+3)write a awk command to print last field without knowing the number of fileds?
+A)awk 'END{print}' emp.lst
+12340|PPava  n|manager|12/12/18|20000
+
+4)awk command for "head -n 5 filename"
+A) awk 'NR==1,NR==5' emp.lst
+12345|pavan|director|sales|12/06/13|20000
+12346|kalyan|mana ger|sales|14/07/13
+12347|harsh a|ceo|sales|11/12/03|40000000
+12348|yadav|salesman|12/12/12|10000^C
+1239|Pavan|chairman|sales|11/12/01/200000
+
+5)awk command for "sed -n '3,6p' filenamme
+A)awk 'NR==3,NR==6' emp.lst
+12347|harsh a|ceo|sales|11/12/03|40000000
+12348|yadav|salesman|12/12/12|10000^C
+1239|Pavan|chairman|sales|11/12/01/200000
+12340|PPava  n|manager|12/12/18|20000
+
+6)awk command for "tail +6 file name"
+A)tail +6 emp.lst
+12340|PPava  n|manager|12/12/18|20000
+
+ awk 'END{print}' emp.lst
+12340|PPava  n|manager|12/12/18|20000
