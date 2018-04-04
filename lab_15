@@ -9,21 +9,19 @@ function display_output(){
 		dialog --backtitle "Linux Shell Script Tutorial" --title "${t}" --clear --msgbox "$(<$OUTPUT)" ${h} ${w}
 				}
 				
-							function Copy()
-							{
-								        echo "Enter filename"
-									        read f1
-										        echo "Enter destination"
-											        read f2
-												        if [ -f $f1 -a -f $f2 ]
-														         then cp $f1 $f2
+					function Copy()
+					{
+					     echo "Enter filename"
+						 read f1
+					echo "Enter destination"
+						    read f2
+							if [ -f $f1 -a -f $f2 ]
+								 then cp $f1 $f2
 
-																  else
-																	           echo "file doesn't exist"
-																		    fi
-											
-									       
-																	    }
+								  else
+							           echo "file doesn't exist"
+								    fi
+						   }
 							function Rename()
 																	    {
 																		            echo "Enter filename"
@@ -31,8 +29,7 @@ function display_output(){
 																				            echo "Enter the name that you wish to change to"
 																					            read f2
 																						            mv $f1 $f2
-																						    }
-							
+																						    
 																						    function Remove()
 																						    {
 																							           echo "enter the filename you want to remove"
